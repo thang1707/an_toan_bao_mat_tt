@@ -8,30 +8,36 @@
   <nav>
     <h1>Ứng dụng mã hóa và giải mã dữ liệu bằng hệ mã ElGamal</h1>
   </nav>
+
   <div id="box">
-    <div id="box1">
+    <div class="box0 box1">
+      <h2>Nhập chuỗi cần mã hóa:</h2>
       <div>
-        <h2>Nhập chuỗi cần mã hóa:</h2>
-        <input type="text" id="message" placeholder="Nhập chuỗi..." />
+        <div class="input-box">
+          <input type="text" id="message" required />
+          <label for="">Nhập chuỗi</label>
+        </div>        
         <button onclick="encrypt()">Mã hóa</button>
-
         <h3>Kết quả mã hóa:</h3>
-        <p id="result"></p>
-      </div>     
+        <p id="result"></p>    
+      </div>
     </div>
-    <div id="box2">
-      <div>
-        <h2>Nhập dữ liệu mã hóa cần giải mã:</h2>
-        <textarea id="encryptedMessage" placeholder="Nhập dữ liệu mã hóa (c1, c2)"></textarea>
-        <button onclick="decrypt()">Giải mã</button>
 
+    <div class="box0 box2">
+      <h2>Nhập dữ liệu mã hóa cần giải mã:</h2>
+      <div>
+        <div class="input-box">
+          <textarea id="encryptedMessage" required></textarea>
+          <label for="">Nhập key</label>
+        </div>   
+        <button onclick="decrypt()">Giải mã</button>
         <h3>Kết quả giải mã:</h3>
         <p id="decryptedResult"></p>
       </div>
     </div>
-  </div>
+      
 
-
+</div>
   <script src="./call_API.js"></script>
 </body>
 </html>
