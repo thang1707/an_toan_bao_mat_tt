@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: block;
+    width: 100%;
+    height: 4em;
+    text-align: center;
+    padding-top: 2em;
+}
+nav > h1{
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#box{
+    display: block;
+    height: 90vh;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+#box1{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#box1 > div{
+    width: 70%;
+    height: 80%;
+}
+#box1 > div > h2{
+    text-align: center;
+    padding-bottom: 2em;
+}
+#message{
+    width: 30em;
+    height: 3em;
+    margin-right: 1em;
+}
+#box1 > div > button{
+    padding: 0.7em;
+    font-weight: 800;
+}
+#box1 > div > h3{
+    margin-top: 3em;
+}
+#box2{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#box2 > div{
+    width: 70%;
+    height: 80%;
+}
+#box2 > div > h2{
+    text-align: center;
+    padding-bottom: 2em;
+}
+#encryptedMessage{
+    width: 25em;
+    height: 3em;
+    margin-right: 1em;
+    display: inline-block;
+}
+#box2 > div > button{
+    height: 3em;
+    position: relative;
+    top: -1.2em;
+    font-weight: 800;
+    width: 5.5em;
+}
+#box2 > div > h3{
+    margin-top: 3em;
+}
